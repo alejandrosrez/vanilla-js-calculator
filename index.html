@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main>
+       <div class="grid-container">
+           <div id="result">0</div>
+           <button id="oClear" onclick="clearClick()">AC</button>
+           <button id="oDiv" onclick="operationClick('div')">÷</button>
+           <button id="n7" onclick="numberClick('n7')">7</button>
+           <button id="n8" onclick="numberClick('n8')">8</button>
+           <button id="n9" onclick="numberClick('n9')">9</button>
+           <button id="oMult" onclick="operationClick('mult')">×</button>
+           <button id="n4" onclick="numberClick('n4')">4</button>
+           <button id="n5" onclick="numberClick('n5')">5</button>
+           <button id="n6" onclick="numberClick('n6')">6</button>
+           <button id="oSub" onclick="operationClick('sub')">−</button>
+           <button id="n1" onclick="numberClick('n1')">1</button>
+           <button id="n2" onclick="numberClick('n2')">2</button>
+           <button id="n3" onclick="numberClick('n3')">3</button>
+           <button id="oAdd" onclick="operationClick('sum')">+</button>
+           <button id="n0" onclick="numberClick('n0')">0</button>
+           <button id="oDecimal" onclick="decimalClick()">.</button>
+           <button id="oEqual" onclick="equalClick()">=</button>
+       </div>
+   </main>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
