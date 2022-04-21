@@ -6,6 +6,7 @@ main {
 
 button {
     height: 40px;
+    margin: 0;
 }
 
 .grid-container {
