@@ -4,16 +4,24 @@ let currentResult, currentOperation, isDecimal;
 
 currentOperation = '';
 
+operationCount = 0;
+
 isDecimal = false;
 
 numberClick = (numberId) => {
     let currentNumber = document.getElementById(numberId).innerText;
     
-    if (!isDecimal) {
-        result.innerText = currentNumber;
-    } else {
+        if (result.innerText == 0) {
+            result.innerText = '';
+        }
+
         result.innerText += currentNumber;
-    } 
+
+        if (operationCount == 1) {
+            result.innerText = '';
+            result.innerText += currentNumber;
+            operationCount = 0;
+        }
 }
 
 operationClick = (operation) => {
@@ -38,11 +46,13 @@ operationClick = (operation) => {
        currentOperation = operation;
        result.innerText = currentResult;
        isDecimal = false;
+       operationCount = 1;
 
     } else {
         currentOperation = operation;
         currentResult = parseFloat(result.innerText);
         isDecimal = false;
+        operationCount = 1;
     }
 }
 
