@@ -1,3 +1,7 @@
+* {
+    touch-action: manipulation;
+}
+
 main {
     width: 230px;
     margin: auto;
