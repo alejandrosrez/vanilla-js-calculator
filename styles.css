@@ -4,6 +4,12 @@ main {
     font-family: 'Mulish', sans-serif;
 }
 
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+}
+
 button {
     height: 40px;
     margin: 0;
