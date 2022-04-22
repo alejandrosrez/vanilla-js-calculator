@@ -11,7 +11,7 @@ isDecimal = false;
 numberClick = (numberId) => {
     let currentNumber = document.getElementById(numberId).innerText;
     
-        if (result.innerText == 0) {
+        if (result.innerText === '0') {
             result.innerText = '';
         }
 
@@ -73,8 +73,13 @@ equalClick = () => {
        currentResult = currentResult / parseFloat(result.innerText);
    }
 
+   if (currentOperation == '') {
+    result.innerText = result.innerText;
+} else {
     result.innerText = currentResult;
     currentOperation = '';
+}
+
 }
 
 clearClick = () => {
